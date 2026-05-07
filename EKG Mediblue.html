@@ -765,8 +765,8 @@
             resetForm();
             document.getElementById('start-date').textContent = formatDate(EKG_START_DATE.toISOString());
             const dueDate = new Date(EKG_START_DATE);
-            dueDate.setFullYear(dueDate.getFullYear() + 2);
-            document.getElementById('battery-due-date').textContent = formatMonthYear(dueDate);
+            dueDate.setFullYear(dueDate.getFullYear() + 3);
+            document.getElementById('battery-due-date').textContent = "25 มีนาคม 2571";
             switchTab('check');
             loadHistoryData();
         }
